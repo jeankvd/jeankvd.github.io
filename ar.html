@@ -52,11 +52,11 @@
     <!-- <a-plane color="#CCC" height="20" width="20">
       <a-image src="#test-image" scale = "2 2 0" rotation = "-50 90 0" transparent="true" position="1 1 -3"></a-image>
     </a-plane> -->
-    <a-entity position="0 0 0">
+    <a-entity position="0 0 0" animation="property: rotation; to: 0 90 0; loop: true; dur: 10000">
       <a-plane src="#test-image" height="100" width="100" rotation="-90 0 0"></a-plane>
     </a-entity>
 
-    <a-entity position="30 30 30">
+    <a-entity animation="property: position; to: 1 8 -10; dur: 2000; easing: linear; loop: true" position="30 30 30">
       <a-plane src="#test-image" height="100" width="100" position="-100 -100 -100" rotation="-90 0 0"></a-plane>
     </a-entity>
       
